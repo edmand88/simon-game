@@ -1,2 +1,2 @@
 # simon-game
- This is the classical simon game coded with html, css and javascript.
+ This is the classical Simon game coded with html, css and javascript.
