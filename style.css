@@ -1,0 +1,106 @@
+body {
+   display: grid;
+   place-items: center;
+   height: 100vh;
+   margin: 0;
+   font-family: Arial, sans-serif;
+}
+
+#container {
+   text-align: center;
+}
+
+#scoreContainer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   margin-top: 20px;
+}
+
+#levelInd, #highInd {
+   flex: 1;
+   margin: 20px 0;
+   padding: 15px;
+   background-color: #f0f0f0;
+   border: 2px solid #ccc;
+   border-radius: 10px;
+}
+
+#currLevel, #highScore {
+   font-size: 25px;
+}
+
+#game {
+   margin-top: 20px;
+}
+
+.butt {
+    border: 2px outset grey;
+    height:200px;
+    width:200px;
+    border-radius: 7px;
+    cursor:pointer;
+ }
+
+ #green {
+    background-color: rgb(33, 186, 33);
+ }
+
+ #green:hover {
+    background-color: rgb(4, 114, 4);
+ }
+
+ #green:active {
+   background-color: rgb(2, 61, 2);
+ }
+
+ #red {
+    background-color: #e74a4a;
+ }
+
+ #red:hover {
+    background-color: rgb(176, 13, 13);
+ }
+
+ #red:active {
+   background-color: rgb(100, 3, 3);
+ }
+
+ #yellow {
+    background-color: rgb(232, 232, 72);
+ }
+
+ #yellow:hover {
+    background-color: rgb(160, 160, 4);
+ }
+
+ #yellow:active {
+   background-color: rgb(105, 105, 5);
+}
+
+ #blue {
+    background-color: #0073e6;
+ }
+
+ #blue:hover {
+    background-color: rgb(3, 3, 131);
+ }
+
+ #blue:active {
+   background-color: rgb(1, 1, 56);
+}
+
+#play {
+   height: 80px;
+   width: 100px;
+   margin-top: 20px;
+   font-size: 22px;
+}
+
+#quit {
+   height: 50px;
+   width: 90px;
+   margin-top: 20px;
+   font-size: 22px;
+}

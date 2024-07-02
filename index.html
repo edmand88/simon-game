@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorization Game (Simon)</title>
+    <link rel="icon" type="image/x-icon" href="./panda.png">
+    <link rel="stylesheet" href="./style.css">
+    <audio id="audioGreen" src="green.wav"></audio>
+    <audio id="audioRed" src="red.wav"></audio>
+    <audio id="audioYellow" src="yellow.wav"></audio>
+    <audio id="audioBlue" src="blue.wav"></audio>
+</head>
+<body>
+    <div id="container">
+        <h1>Memorization Game (Simon)</h1>
+        <div id="game" style="display: none;">
+            <div id="scoreContainer">
+                <div id="levelInd">
+                    <h2>Level</h2>
+                    <h3 id="currLevel">currLevel();</h3>
+                </div>
+                <div id="highInd">
+                    <h2>High Score</h2>
+                    <h3 id="highScore">0</h3>
+                </div>
+            </div>
+            <div id="squares">
+                <table id="grid">
+                    <tr>
+                        <td class="buttons"><input class="butt" id="green" onclick="clickedSequence(0);" type="button"/></td>
+                        <td class="buttons"><input class="butt" id="red" onclick="clickedSequence(1);" type="button"/></td>
+                    </tr>
+                    <tr>
+                        <td class="buttons"><input class="butt" id="yellow" onclick="clickedSequence(2);" type="button"/></td>
+                        <td class="buttons"><input class="butt" id="blue" onclick="clickedSequence(3);" type="button"/></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="playButtonContainer">
+            <button id="play" onclick="startGame()">Play</button>
+        </div>
+        <div id="quitButtonContainer" style="display: none;">
+            <button id="quit" onclick="quitGame()">Quit</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
