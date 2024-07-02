@@ -3,6 +3,7 @@ var ind = 0;
 var sequenceLength = 1;
 var curr = 0;
 let allCorrect = true;
+let newHighScore = false;
 const colors = new Map([
     [0, 'green'],
     [1, 'red'],
@@ -58,6 +59,7 @@ const getHighestScore = () => {
 const updateHighestScore = () => {
     let highestScore = getHighestScore();
     if ((sequenceLength-1) > highestScore) {
+        newHighScore = true;
         localStorage.setItem('highestScore', (sequenceLength-1));
     }
     document.getElementById("highScore").innerHTML = getHighestScore();
@@ -143,6 +145,15 @@ const clickedSequence = (ID) => {
             window.alert("Wrong!! The color should be " + colors.get(sequence[ind]) + ".");
             if(sequenceLength > 1){
                 window.alert("You reached a score of " + (sequenceLength - 1) + ".");
+            }
+
+            if(newHighScore){
+                let text = "";
+                for(let k = 0; k < getHighestScore(); k++){
+                    text+='!';
+                }
+
+                window.alert("Way to go! You just reached a new high score of " + getHighestScore() + text);
             }
             location.reload();
         }
