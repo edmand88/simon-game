@@ -118,10 +118,6 @@ const displayColor = () => {
         document.getElementById('yellow').disabled = false;
         document.getElementById('blue').disabled = false;
     }, sequence.length * 750);
-
-    setTimeout(() => {
-        window.alert("Now, it is your turn!");
-    }, sequence.length * 750 + 500);
 }
 
 const clickedSequence = (ID) => {
